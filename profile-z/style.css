@@ -2,10 +2,11 @@
 @import url("https://fonts.googleapis.com/css2?family=Josefin+Slab:wght@100;200;400;600;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap");
 
-* {
+*,
+*:before,
+*:after {
   margin: 0;
   padding: 0;
-  border: 0;
   box-sizing: border-box;
 }
 
@@ -71,7 +72,7 @@ section h1 {
 
 .header {
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
   background-color: #2f3857;
   position: fixed;
   align-items: center;
@@ -97,7 +98,7 @@ section h1 {
 }
 
 .navigation-link {
-  font-size: 1.2rem;
+  font-size: 1rem;
   color: #88858c;
   text-decoration: none;
   font-family: inherit;
@@ -107,7 +108,6 @@ section h1 {
 
 .navigation-link:hover {
   color: gold !important;
-
   color: rgb(38, 57, 77);
   outline: none;
 }
@@ -127,22 +127,47 @@ section h1 {
   width: 4rem;
 }
 
+/* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>****Right nav****>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+
+.rt-nav {
+  width: 150px;
+  background-color: #2f3857;
+}
+
+.rt-nav .icons-wrapper {
+  display: flex;
+  justify-content: space-around;
+}
+
+.rt-nav .icons-wrapper .icon {
+  cursor: pointer;
+}
+
+.rt-nav i {
+  font-size: 0.9rem;
+  color: #fff;
+}
+
+/* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+
 .logo {
   position: absolute;
   left: 1rem;
-  top: 1.2rem;
-  font-size: 2rem;
-  color: #795548;
-
+  font-size: 0.7rem;
+  color: #fff;
   font-family: "Luckiest Guy", cursive;
+  border: 2px solid #fff;
+  border-radius: 50%;
+  padding: 0.5rem;
 }
 
 .hero {
   position: relative;
   min-height: 100vh;
   background-color: #2f3857;
+  min-width: 100%;
 }
-
+/* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>***Banner>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
 .banner {
   position: absolute;
   left: 50%;
@@ -150,32 +175,63 @@ section h1 {
   transform: translate(-50%, -50%);
   text-align: center;
   font-family: "Ubuntu", sans-serif;
-}
-
-.banner-desc .banner-img {
-  width: 200px;
-  height: 200px;
-  background: url("./cc1.jpeg");
-  background-size: cover;
-  background-position: -205px -50px;
+  min-width: 70%;
+  min-height: 400px;
   margin: 0 auto;
-  border-radius: 50%;
+  background-color: #fff;
+  display: flex;
 }
 
-.banner-desc .name {
+.banner .info {
+  min-width: 60%;
+  min-height: 100%;
+}
+
+.banner .pic {
+  min-width: 40%;
+  min-height: 100%;
+}
+
+.banner .info {
+  position: relative;
+}
+
+.banner .info .main-div {
+  position: absolute;
+  left: 50%;
+  top: 45%;
+  transform: translate(-50%, -50%);
+  border: 1px solid green;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.banner .info p {
   font-size: 4rem;
-  font-family: inherit;
-  font-weight: 400;
-  margin: 0rem auto 0rem auto;
-  color: #88858c;
+  width: 20%;
+  text-align: center;
+  border: 1px solid blue;
+  flex: 1 1 40%;
+  text-align: right;
 }
 
-.banner-desc .role {
-  font-size: 2.6rem;
-  font-family: inherit;
-  font-weight: 100;
-  color: #88858c;
-  font-weight: 800;
+.banner .sentences {
+  flex: 1 1 60%;
+  text-align: left;
+  padding-left: 0.5rem;
+}
+
+.banner .info span {
+  display: block;
+  height: 100%;
+  border: 1px solid orange;
+  font-size: 1.8rem;
+}
+
+.banner .pic {
+  background-color: purple;
 }
 
 /* ------------------------web */
@@ -347,7 +403,7 @@ section h1 {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  height: 30rem;
+  height: 35rem;
   text-align: left;
   padding: 1rem;
   padding-bottom: 0;
@@ -457,7 +513,7 @@ label {
 #message {
   width: 100%;
   outline: none;
-  border: 2px solid #2e3448;
+  border: 1px solid #b8b8b8;
   border-radius: 5px;
   padding-top: 0.9rem;
   background-color: #eeeff2;
@@ -468,7 +524,7 @@ label {
 #subject {
   width: 100%;
   height: 70px;
-  border: 2px solid #2e3448;
+  border: 1px solid #b8b8b8;
   background-color: #eeeff2;
   padding: 1rem;
 }
