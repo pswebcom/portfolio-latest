@@ -8,6 +8,7 @@ menu.addEventListener("click", () => {
   if (navi.classList.contains("show")) {
     navi.classList.remove("show");
     navi.classList.add("hide");
+    console.log("dasd");
   } else {
     navi.classList.remove("hide");
     navi.classList.add("show");
