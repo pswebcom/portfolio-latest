@@ -113,15 +113,16 @@ section h1 {
 }
 
 .active {
-  color: #fff !important;
+  color: #2f3857 !important;
+  font-weight: bolder;
 }
 .active::after {
-  background-color: black !important;
+  background-color: #2f3857 !important;
 }
 
 .navigation-link:hover {
   outline: none;
-  color: red !important;
+  color: #fff !important;
 }
 
 .navigation-link::after {
@@ -594,6 +595,13 @@ label {
 
 .footer {
   background-color: #2f3857;
+  height: 50px;
+  width: 100%;
+  color: #fff;
+  font-size: 0.9rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .copyright {
