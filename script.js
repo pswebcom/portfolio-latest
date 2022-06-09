@@ -8,7 +8,6 @@ menu.addEventListener("click", () => {
   if (navi.classList.contains("show")) {
     navi.classList.remove("show");
     navi.classList.add("hide");
-    console.log("dasd");
   } else {
     navi.classList.remove("hide");
     navi.classList.add("show");
@@ -131,10 +130,8 @@ const messageInput = document.querySelector("#message");
 formMain.addEventListener("submit", (e) => {
   validateForm();
   if (isFormValid()) {
-    alert("yes");
     e.preventDefault();
   } else {
-    alert("no");
     e.preventDefault();
   }
 });
@@ -142,7 +139,6 @@ formMain.addEventListener("submit", (e) => {
 const isFormValid = () => {
   const form = document.querySelector(".my-form");
   const inputContainers = form.querySelectorAll(".input-ctrl");
-  console.log(inputContainers);
   let result = true;
   inputContainers.forEach((container) => {
     if (container.classList.contains("error")) {
