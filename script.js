@@ -131,6 +131,8 @@ formMain.addEventListener("submit", (e) => {
   validateForm();
   if (isFormValid()) {
     e.preventDefault();
+    var data = new FormData(formMain);
+    ajax(formMain.method, formMain.action, data, success, error);
   } else {
     e.preventDefault();
   }
@@ -242,3 +244,33 @@ const isEmailValid = (email) => {
     /^[a-zA-Z0-9.!#$%&’*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
   return regex.test(email);
 };
+
+function ajax(method, url, data, success, error) {
+  var xhr = new XMLHttpRequest();
+  xhr.open(method, url);
+  xhr.setRequestHeader("Accept", "application/json");
+  xhr.onreadystatechange = function () {
+    if (xhr.readyState !== XMLHttpRequest.DONE) return;
+    if (xhr.status === 200) {
+      // success(xhr.response, xhr.responseType);
+
+      alert(
+        "your message has been recieved please give us 1 to 2 business days to reply your query"
+      );
+    } else {
+      // error(xhr.status, xhr.response, xhr.responseType);
+    }
+  };
+  xhr.send(data);
+}
+
+function success() {
+  formMain.reset();
+  status.classList.add("success");
+  status.innerHTML = "Thanks!";
+}
+
+function error() {
+  status.classList.add("error");
+  status.innerHTML = "Oops! There was a problem.";
+}
