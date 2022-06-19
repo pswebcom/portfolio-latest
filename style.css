@@ -387,6 +387,9 @@ section h1 {
   padding: 0.5rem 0;
   font-weight: 800;
   color: #696969;
+  /* background-color: #2f3857; */
+  padding: 0.5rem;
+  border: 1px solid #2f3857;
 }
 
 .portfolio-box img {
