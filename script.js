@@ -30,15 +30,16 @@ linkz.forEach((el) => {
     }
     el.classList.add("active");
 
-    // console.log(el.hash);
+    // console.log("hash--".el.hash);
 
-    //after click we move to target location check below line
+    //after click we move to target location
     let targetLocation = document.querySelector(el.hash);
-    // console.log("hash--", targetLocation);
+    console.log("targetLocation--", targetLocation);
 
     //distance between top of the page and the clicked element check below line`
     let distanceOfTargetElementFromTop = targetLocation.offsetTop;
     let currentPageLoc = document.documentElement.scrollTop;
+    console.log(distanceOfTargetElementFromTop);
 
     myMove(currentPageLoc, distanceOfTargetElementFromTop);
 
@@ -54,7 +55,7 @@ linkz.forEach((el) => {
 });
 
 const myMove = (currentPageLoc, distanceOfTargetElementFromTop) => {
-  const speed = 10;
+  const speed = 15;
   const pos = distanceOfTargetElementFromTop > currentPageLoc ? 1 : -1;
   let move = Math.floor(
     ((distanceOfTargetElementFromTop - currentPageLoc) * pos) / speed
