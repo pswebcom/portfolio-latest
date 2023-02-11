@@ -605,6 +605,8 @@ label {
 
 .footer {
   background-color: var(--color-2);
+  background: var(--color-5);
+
   height: 50px;
   width: 100%;
   color: #fff;
@@ -625,8 +627,9 @@ label {
 /* footer */
 @media screen and (max-width: 1400px) {
   .form {
-    height: 530px;
+    height: 570px;
     min-width: 80%;
+    padding-top: 1rem;
   }
 
   .form .my-form {
@@ -643,16 +646,37 @@ label {
   .row-form .name,
   .row-form .email {
     width: 100%;
-    height: 80px;
+    height: 68px;
   }
 
   .row-form .name,
   .row-form .email {
-    margin-bottom: 0.5rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .form button {
+    margin: 0 auto;
   }
 
   #subject {
     margin-bottom: 1rem;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .nav ul.navigation-list {
+    width: 100%;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 500px;
+    margin: 0 auto;
+    background-color: var(--color-2);
+    cursor: pointer;
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 1000;
+    padding: 1rem 0;
   }
 }
 
@@ -775,7 +799,7 @@ label {
   .nav ul.navigation-list {
     /* display: none; */
 
-    width: 100%;
+    /* width: 100%;
     flex-direction: column;
     justify-content: space-between;
     height: 300px;
@@ -785,7 +809,7 @@ label {
     position: fixed;
     left: 0;
     top: 0;
-    z-index: 1000;
+    z-index: 1000; */
   }
 
   .nav ul.navigation-list a {
