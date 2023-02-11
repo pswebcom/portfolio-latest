@@ -483,7 +483,7 @@ label {
 ::placeholder {
   font-size: 1.2rem;
   text-align: center;
-  color: darkgray;
+  /* color: darkgray; */
   font-family: "Ubuntu", sans-serif;
 }
 
@@ -568,10 +568,8 @@ label {
 #message {
   width: 100%;
   outline: none;
-  border: 1px solid #b8b8b8;
   border-radius: 5px;
   padding-top: 0.9rem;
-  background-color: #eeeff2;
 }
 
 #email,
@@ -580,7 +578,6 @@ label {
   width: 100%;
   height: 70px;
   border: 1px solid #b8b8b8;
-  background-color: #eeeff2;
   padding: 1rem;
 }
 
@@ -595,7 +592,7 @@ label {
   cursor: pointer;
   font-family: "Ubuntu", sans-serif;
 
-  background-color: #2e3447;
+  background-color: var(--color-2);
   color: #ccc;
   border-radius: 4px;
 }
@@ -608,7 +605,7 @@ label {
 /* ----------------------footer */
 
 .footer {
-  background-color: #2f3857;
+  background-color: var(--color-2);
   height: 50px;
   width: 100%;
   color: #fff;
