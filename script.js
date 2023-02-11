@@ -36,10 +36,8 @@ linkz.forEach((el) => {
     let targetLocation = document.querySelector(el.hash);
     // console.log("hash--", targetLocation);
 
-    //distance between top of the page and the clicked element check below line
+    //distance between top of the page and the clicked element check below line`
     let distanceOfTargetElementFromTop = targetLocation.offsetTop;
-    console.log("distance from top", distanceOfTargetElementFromTop);
-
     let currentPageLoc = document.documentElement.scrollTop;
 
     myMove(currentPageLoc, distanceOfTargetElementFromTop);
