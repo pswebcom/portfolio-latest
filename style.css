@@ -12,6 +12,12 @@
   --fsize-500: 2rem;
   --fsize-400: 1rem;
   --nav-font-color: #c8c8c8;
+  --color-1: #e7effe;
+  --color-2: #586693;
+  --color-3: #d8e2ff;
+  --color-4: #a7aabb;
+  --color-5: #041d3f;
+  --font-lguy: "Luckiest Guy", cursive;
 }
 *,
 *:before,
@@ -45,21 +51,30 @@ section .heading {
   position: relative;
 }
 
+section .heading:nth-child(even) {
+  color: #586693;
+}
+
 section h1 {
   padding: 3rem;
   text-align: center;
-  font-size: 3rem;
+  font-size: 2.5rem;
   font-family: "Montserrat", sans-serif;
   font-weight: 400;
   text-transform: uppercase;
-  color: #795548;
+  color: #fefefe;
+}
+
+section h1:nth-child(even) {
+  color: red;
 }
 
 .section-heading::after {
   content: "";
   width: 11rem;
   height: 0.3rem;
-  background-color: rgb(38, 57, 77);
+  background-color: #fefefe;
+
   margin: 0 auto;
   position: absolute;
   top: 7rem;
@@ -70,10 +85,6 @@ section h1 {
 .wrapper {
   background-color: #242a37;
   min-width: 100%;
-}
-
-section h1 {
-  color: #464646;
 }
 
 .header {
@@ -93,7 +104,6 @@ section h1 {
 .nav {
   width: 45%;
   font-family: "Montserrat", sans-serif;
-  /* background-color: #297f86; */
 }
 
 .nav .navigation-list {
@@ -228,7 +238,7 @@ section h1 {
 .hero .name {
   margin: 0 auto;
   font-size: var(--fsize-xxl);
-  font-family: "Luckiest Guy", cursive;
+  font-family: var(--font-lguy);
   color: #f5e971;
 }
 
@@ -257,10 +267,7 @@ section h1 {
 /* ------------------------web */
 
 .skills {
-  background-color: #dfe0e1;
-  background: #f5e971;
-  /* background: #fef000; */
-  background: #33a3ab;
+  background: var(--color-2);
   display: flex;
   justify-content: center;
   text-align: center;
@@ -276,8 +283,7 @@ section h1 {
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
-  background-color: lightgray;
-  background: #fff;
+  background-color: #fefefe;
   padding: 1rem 0;
   box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
 }
@@ -316,7 +322,16 @@ section h1 {
   text-align: center;
   flex-direction: column;
   background-color: #fff;
-  font-family: "Raleway", sans-serif;
+  background: var(--color-3);
+  font-family: var(--font-lguy);
+}
+
+.portfolio h1 {
+  color: var(--color-2);
+}
+
+.portfolio h1::after {
+  background: var(--color-2);
 }
 
 .portfolio-wrapper {
@@ -344,10 +359,11 @@ section h1 {
   justify-content: space-between;
   align-items: center;
   flex-direction: column;
-  border: 1px solid lightgrey;
+  /* border: 1px solid lightgrey; */
   font-family: "Raleway", sans-serif;
   text-align: center;
   color: #0e0e0e;
+  background-color: #fefefe;
 }
 
 .portfolio-box .image {
@@ -362,9 +378,7 @@ section h1 {
   padding: 0.5rem 0;
   font-weight: 800;
   color: #696969;
-  /* background-color: #2f3857; */
   padding: 0.5rem;
-  border: 1px solid #2f3857;
 }
 
 .portfolio-box img {
@@ -387,6 +401,7 @@ section h1 {
 .action .btn {
   padding: 0.5rem 1rem;
   background-color: #2f3857;
+  background-color: var(--color-2);
   color: #e5f9f6;
   border-radius: 2px;
   font-family: inherit;
@@ -404,8 +419,7 @@ section h1 {
 /* --------------------------------about */
 
 .about {
-  background: #f5e971;
-  /* background: #fef000; */
+  background: var(--color-2);
 }
 
 .my-info {
@@ -418,19 +432,26 @@ section h1 {
   font-size: 1.9rem;
   letter-spacing: 4px;
   line-height: 1.3;
-  color: #696969;
-  color: black;
+  color: #fefefe;
 }
 
 /* -------------------------------contact */
 .contact {
-  background-color: #f5f5f5;
+  background-color: var(--color-3);
+}
+
+.contact h1 {
+  color: var(--color-2);
+}
+
+.contact h1::after {
+  background: var(--color-2);
 }
 
 .form {
   max-width: 70%;
   margin: 0 auto;
-  background-color: #eeeff2;
+  background-color: #fefefe;
 }
 
 .my-form {
@@ -440,7 +461,6 @@ section h1 {
   height: 35rem;
   text-align: left;
   padding: 1rem;
-
   padding-bottom: 0;
 }
 
