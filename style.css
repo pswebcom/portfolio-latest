@@ -90,20 +90,18 @@ section h1:nth-child(even) {
 .header {
   display: flex;
   justify-content: space-around;
-  background-color: #2f3857;
   position: fixed;
   align-items: center;
   width: 100%;
-  z-index: 12;
-  background: #f5ea71;
-  /* background: #fef000; */
-  background-color: #297f86;
-  background: transparent;
+  z-index: 11112;
+  background: var(--color-5);
 }
 
 .nav {
   width: 45%;
   font-family: "Montserrat", sans-serif;
+  background: var(--color-5);
+  /* background-color: #082049; */
 }
 
 .nav .navigation-list {
@@ -225,6 +223,7 @@ section h1:nth-child(even) {
   top: 0;
   background-color: black;
   opacity: 0.4;
+  z-index: 100;
 }
 
 .hero .profile {
