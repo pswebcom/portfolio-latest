@@ -89,7 +89,7 @@ section h1 {
   justify-content: space-around;
   position: fixed;
   align-items: center;
-  width: 100%;
+  min-width: 100%;
   z-index: 999;
   background: var(--color-5);
 }
@@ -589,7 +589,7 @@ label {
   cursor: pointer;
   font-family: "Ubuntu", sans-serif;
 
-  background-color: var(--color-2);
+  background-color: var(--color-5);
   color: #ccc;
   border-radius: 4px;
 }
