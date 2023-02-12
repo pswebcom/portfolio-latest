@@ -265,7 +265,7 @@ section h1 {
 /* ------------------------web */
 
 .skills {
-  background: var(--color-2);
+  background: var(--color-5);
   display: flex;
   justify-content: center;
   text-align: center;
@@ -320,7 +320,7 @@ section h1 {
   text-align: center;
   flex-direction: column;
   background-color: #fff;
-  background: var(--color-3);
+  background: var(--color-1);
   font-family: var(--font-lguy);
 }
 
@@ -417,7 +417,7 @@ section h1 {
 /* --------------------------------about */
 
 .about {
-  background: var(--color-2);
+  background: var(--color-5);
 }
 
 .my-info {
