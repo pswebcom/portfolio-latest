@@ -141,7 +141,7 @@ section h1 {
   content: "";
   height: 0.3rem;
   position: absolute;
-  top: 3rem;
+  top: 2rem;
   left: 0rem;
   transition: width 0.2s cubic-bezier(1, 0, 0, 1);
   width: 2.8rem;
@@ -602,9 +602,7 @@ label {
 /* ----------------------footer */
 
 .footer {
-  background-color: var(--color-2);
   background: var(--color-5);
-
   height: 50px;
   width: 100%;
   color: #fff;
@@ -717,10 +715,10 @@ label {
   .navigation-link::after {
     content: "";
     position: absolute;
-    top: 3rem;
-    left: 0rem;
+    top: 0rem;
+    left: 10rem;
     transition: width 0.2s cubic-bezier(1, 0, 0, 1);
-    width: 8rem;
+    width: 18rem;
     height: 0.3rem;
   }
 
@@ -825,12 +823,6 @@ label {
     height: 0rem;
   }
 
-  .navigation-link::after {
-    content: "";
-    width: 0rem;
-    height: 0rem;
-  }
-
   h1.section-heading {
     margin-bottom: 1rem;
     padding: 0;
@@ -861,7 +853,6 @@ label {
 
   .portfolio-wrapper .portfolio-box {
     flex: 1 0 19rem;
-    /* padding-top: 112px; */
   }
 
   .portfolio-wrapper .box img {
@@ -931,6 +922,7 @@ label {
     display: none;
   }
 }
+
 /* 
 @media screen and (orientation: portrait)  {
 } */
