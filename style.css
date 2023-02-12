@@ -399,7 +399,7 @@ section h1 {
 .action .btn {
   padding: 0.5rem 1rem;
   background-color: #2f3857;
-  background-color: var(--color-2);
+  background-color: var(--color-5);
   color: #e5f9f6;
   border-radius: 2px;
   font-family: inherit;
