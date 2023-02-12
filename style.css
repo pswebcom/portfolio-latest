@@ -663,8 +663,8 @@ label {
   .nav {
     transition: all 3s;
     display: flex;
-    text-align: center;
-    justify-content: center;
+    text-align: left;
+    justify-content: left;
     min-width: 100%;
     padding-left: 1rem;
     display: none;
@@ -683,6 +683,11 @@ label {
     top: 0;
     z-index: 1000;
     padding: 1rem 0;
+    border: 1px solid #fefefe;
+  }
+
+  .navigation-item {
+    width: 55%;
   }
 
   .menu {
@@ -715,10 +720,10 @@ label {
   .navigation-link::after {
     content: "";
     position: absolute;
-    top: 0rem;
-    left: 10rem;
+    top: 2.8rem;
+    left: 0rem;
     transition: width 0.2s cubic-bezier(1, 0, 0, 1);
-    width: 18rem;
+    width: 8rem;
     height: 0.3rem;
   }
 
