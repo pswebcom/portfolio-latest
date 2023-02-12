@@ -687,7 +687,7 @@ label {
   }
 
   .navigation-item {
-    width: 55%;
+    width: 50%;
   }
 
   .menu {
@@ -914,6 +914,7 @@ label {
     text-align: center;
     width: 420px;
     height: 360px;
+    margin-top: 2rem;
   }
 }
 
